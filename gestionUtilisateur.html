@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Utilisateur</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            
+                <nav class="col-md-1 w-100 d-none d-md-block sidebar text-center">
+                    <img style="margin: 0; padding-top: 10px; padding-right: 10px;" src="img/logoC.jpg" width="70" height="70" alt="">
+                    
+                    <div class="sidebar-sticky">
+                      <!-- <ul class="nav flex-column justify-content-end"> -->
+                      <ul style="padding-left: -10px;padding-right: 10px;" class="nav flex-column text-center">
+                        <hr class="my-2">
+                        <!-- <li class="nav-item">
+                          <a class="" href="#">
+                            <span data-feather="home"></span>
+                            <img style="margin: 0 auto;" src="img/logoC.jpg" width="70" height="70" alt="">
+                          </a>
+                        </li> -->
+                        <li class="nav-item mb-3">
+                            <i class="fa fa-eye text-light"></i><br>
+                          <a class="active" href="#">
+                            Voir les entrées d'élèves
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-eye text-light"></i><br>
+                          <a class="" href="#">
+                            Voir les sorties d'élèves
+                          </a>
+                        </li>
+                        
+                        <li class="nav-item mt-3 mb-1">
+                            <i class="fa fa-cog text-light"></i><br>
+                          <a class="" href="#">
+                            Gestion des parents
+                          </a>
+                        </li>
+                        <hr class="mb-3">
+                        <li class="nav-item mb-2">
+                            <i class="fa fa-cog text-light"></i><br>
+                          <a class="" href="#">
+                            Gestion des élèves
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-list-alt text-light"></i><br>
+                          <a class="text-center" href="#">
+                            Liste abscence
+                          </a>
+                        </li>
+                        
+                        <li class="nav-item mt-3 mb-2">
+                          <i class="fa fa-file text-light"></i><br>
+                        <a class="text-center" href="#">
+                          Raport
+                        </a>
+                      </li>
+                      <hr class="mb-1 mt-3">
+                      <li class="nav-item mt-2 mb-2">
+                        <i class="fa fa-cog text-light"></i><br>
+                      <a class="" href="#">
+                        Gestion d'utilisateurs
+                      </a>
+                    </li>
+                        <li class="nav-item mt-1 mb-3">
+                          <i class="fa fa-bell text-light"></i><br>
+                        <a class="text-center" href="#">
+                          Rappel
+                        </a>
+                      </li>
+                        <!-- <li class="nav-item mt-1 mb-3">
+                          <i class="fa fa-arrow-circle-left text-light"></i><br>
+                        <a class="text-center" href="#">
+                        
+                        </a>
+                      </li> -->
+                      </ul>
+                    </div>
+                  </nav>
+           
+           
+                <nav id="menu" class="offset-md-1 navbar navbar-expand-lg navbar-expand-md fixed-top flex-md-nowrap p-0 shadow">
+                    <!-- <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a> -->
+                    <p class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Etablissement: <strong>Douala Cambridge International School</strong></p>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                      <ul class="navbar-nav px-3">
+                        <!-- <li class="nav-item text-nowrap">
+                          <a class="nav-link" href="#">Secretaire</a>
+                        </li> -->
+                        <li class="nav-item text-nowrap">
+                          <a class="nav-link" href="#">Administrateur</a>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                          <a class="nav-link" href="#">
+                            <img
+                              src="img/logoC.jpg"
+                              class="img-fluid rounded-circle img-thumbnail"
+                              alt="Logo"
+                              style="width:30px;"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </nav> 
+                  <main role="main" class="offset-md-1 col-md-11">
+            
+                    <div class="my-4">
+                        <div class="row my-4">
+                            <div class="col-md-6 pl-4">
+                                <h2>Gestion des Utilisateurs</h2>
+                                <p>cette liste vous permet de ...</p>
+                             </div>
+                             <div class="col-md-6 text-right">
+                                <!-- <span><button class="btn bg-info text-light"><span class="mr-2" style="background: #25648f; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>imprimer les QR Code</button></span> -->
+                                <span><button type="button" class="btn bg-success text-light" data-toggle="modal" data-target="#exampleModal"><span class="mr-2" style="background: #108b73; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>ajouter un utilisateur</button>
+                            </span>
+                             </div>
+                        </div>
+                    </div>
+                  </main>
+
+                  <!-- Table -->
+                  <div class="offset-md-1 col-md-11">
+                    <div class="table-parent-gp">
+                        <div class="row">
+                            <div class="col-md-6">
+                                show <label for=""><input type="number" style="width: 40px;" min="0"></label> entries
+                            </div>
+                            <div class="col-md-6 text-right">
+                                Search: <input type="text">
+                            </div>
+                        </div>
+                        <div style="height: 300px; overflow: scroll;">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Noms</th>
+                                <th scope="col">Prenoms</th>
+                                <th scope="col">Telephone</th>
+                                <th scope="col">Mot de passe</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">action</th>
+                              </tr>
+                            </thead>
+                            <tbody id="home-table">
+                              <tr>
+                                <td scope="row">Marion</td>
+                                <td>Santana</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>admin</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Sadio</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>secretaire</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Wayne</td>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                                <td>secretaire</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+    
+                          <nav aria-label="..." class="justify-content-end">
+                            <ul class="pagination justify-content-end">
+                              <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                  </div>
+
+<!-- Popup form -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter Utilisateurs</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Noms<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Prenoms<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Mot de passe<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Confirmer mot de passe<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+            </div>
+          
+          <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Role</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                      <option selected>Choisir...</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Secretaire">Secretaire</option>
+                      <!-- <option value="3">Three</option> -->
+                    </select>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div> -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-info">Ajouter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                  <!-- Table end -->
+                  <footer class="offset-md-1 col-md-11 bg-secondary">
+                      <div class="text-center bg-secondary">
+                        <p class="mt-2">Copyright &copy; AWIM 2020</p>
+                      </div>
+                  </footer>
+        </div>
+    </div>
+      
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
