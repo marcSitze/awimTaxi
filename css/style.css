@@ -151,6 +151,9 @@ body {
 .card-3{
     border-left: 3px solid rgb(5, 121, 204);
 }
+.card-4{
+    border-left: 3px solid #F39C12;
+}
 
 .card h3{
     margin-top: -10px;
