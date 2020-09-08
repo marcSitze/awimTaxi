@@ -213,7 +213,7 @@ body {
 
   }
   .form-parent{
-    margin-top: 120px;
+    margin-top: 150px;
   }
   .form-parent h1 {
     color: #fff;
@@ -280,9 +280,8 @@ body {
   } */
 
   #clients_list {
-      /* padding: 45px 0 0 0; */
       background: #fff;
-      border: 2px solid #gray;
+      border: 2px solid gray;
   }
 
   .client {
@@ -299,6 +298,15 @@ body {
       background: #fff;
   }
 
+    /* =========================================
+                  Destination
+  ============================================ */
+  .destination-form {
+    border: 2px solid #d3d1d1;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #d3d1d1;
+  }
 
 footer{
   position: relative;
