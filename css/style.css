@@ -189,7 +189,25 @@ body {
   padding: 2px 10px;
   margin: 10px 0;
 }
-
+/* Accueil communiquer */
+#form-communiquer {
+  background: #e2e2e2;
+}
+#form-communiquer form{
+  background: #f8f8f8;
+}
+.accueil-communiquer {
+  border: 1px solid #eeeeee;
+  padding: 10px;
+  box-shadow: 1px 5px 5px 5px #b9b9b9;
+}
+.address-accueil {
+  border: 1px solid #eeeeee;
+  padding: 10px;
+}
+.address-accueil form {
+  background: #f8f8f8;
+}
   /* =========================
     Table elements
   ===========================*/
@@ -228,7 +246,7 @@ body {
     padding: 15px;
     margin-top: 100px;
     margin: auto;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 5px;
   }
   .form-signin .checkbox {
