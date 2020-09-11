@@ -33,12 +33,150 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <a href="" class="text-light">mot de passe oublié</a><br>
-                                <a href="" class="text-light">créer compte</a>
+                                <a href="" class="text-light" data-toggle="modal" data-target="#mdp">mot de passe oublié</a><br>
+                                <a href="" class="text-light" data-toggle="modal" data-target="#signup">créer compte</a>
                             </div>
                         </div>
                     </form>
                     
+                                      <!-- Modal signup-->
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Créer un compte</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="signuppop">
+            <div class="row text-left">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nom du responsable<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Prenom du responsable<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email<span style="color: red;">*</span></label>
+                        <input type="email" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nom de l'entreprise<span style="color: red;">*</span></label>
+                        <input type="email" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+            </div>
+            
+            <h3 class="text-left">Adresse</h3>
+            <div class="row text-left">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Numero<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Numero de la rue<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Code postal<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Ville<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Pays<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+            </div>
+            <h3 class="text-left">Informations entreprise</h3>
+            <div class="row text-left">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">#Register NumOrange#<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">#Register NumMtn#<span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                </div>
+                <div class="col-9">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Acceptation generale de condition de vente <span class="ml-3"><a href="#" class="text-info">Voir le CGV</a></span></label>
+                      </div>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="text-left mb-3 ml-3">
+        <button type="button" class="btn btn-success">Valider</button>
+        <p>Commande avec periode d'essais pendant 15 jours</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal signup end -->
+                                      <!-- Modal mot de passe oublier-->
+<div class="modal fade" id="mdp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+        <form>
+            <h3 class="text-center">Bienvenu</h3>
+            <div class="row text-left">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label"><span style="color: red;"></span></label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Entrer Email Adresse...">
+                      </div>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="text-left mb-3 ml-3">
+        <button type="button" class="btn btn-success">Demander un nouveau mot de passe</button>
+      </div>
+      <a href="#" data-dismiss="modal" class="mb-3">Créer compte</a>
+    </div>
+  </div>
+</div>
+<!-- Modal mot de passe end -->
                 </div>
                 <!-- <footer class="offset-md-1 col-md-11 bg-secondary">
                     <div class="text-center bg-secondary">
@@ -51,5 +189,8 @@
     </div>
 </section>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

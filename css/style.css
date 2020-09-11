@@ -273,6 +273,10 @@ body {
     border-top-right-radius: 0;
   }
 
+  #signuppop input{
+    border-radius: 20px;
+  }
+
   /* ============================
       Gestion parent elements
   ===============================*/
