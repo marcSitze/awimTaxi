@@ -143,16 +143,32 @@ body {
 ==============================*/
 /* Accueil elements */
 .card-1{
-    border-left: 3px solid #040466;
+    background-color:  #3498db;
+    color: #fff;
+}
+.card-1 .card-body {
+  background-color:  #3498DB;
 }
 .card-2{
-    border-left: 3px solid rgb(4, 102, 71);
+  background-color:  #F39C12;
+  color: #fff;
+}
+.card-2 .card-body {
+background-color:  #F39C12;
 }
 .card-3{
-    border-left: 3px solid rgb(5, 121, 204);
+  background-color:  #119411;
+  color: #fff;
+}
+.card-3 .card-body {
+background-color:  #119411;
 }
 .card-4{
-    border-left: 3px solid #F39C12;
+  background-color:  #dc143c;
+  color: #fff;
+}
+.card-4 .card-body {
+background-color:  #dc143c;
 }
 
 .card h3{
