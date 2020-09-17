@@ -137,7 +137,7 @@
                                   </div>
                                 </div>
                                 <div class="card-footer d-flex justify-content-center">
-                                  <span href="#" class="mr-2 font-weight-bold">185.000 FCFA</span> <span class="ml-2"><a href="#" class="text-light">Details <i class="fa fa-arrow-right"></i></a></span>
+                                  <span href="#" class="mr-2 font-weight-bold">185.000 FCFA</span> <span class="ml-2"><a href="#" class="text-light" data-target="#modalcash" data-toggle="modal">Details <i class="fa fa-arrow-right"></i></a></span>
                                 </div>
                               </div>
                           </div>
@@ -180,7 +180,7 @@
 
                   <!-- Table -->
                   <div class="offset-1 col-11">
-                      <h4 class="text-center bg-mute">Gestion des Chauffeurs</h4>
+                      <h4 class="text-center bg-mute"><a href="gestionTaxi.html">Gestion des Taxi</a></h4>
                     <div style="height: 300px; overflow: scroll;">
                     <table class="table table-hover">
                         <thead>
@@ -205,7 +205,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                <button class="btn btn-sm btn-info" data-target="#gestionTaxi1" data-toggle="modal"><i class="fa fa-external-link"></i></button>
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                           </tr>
@@ -218,7 +218,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                <button class="btn btn-sm btn-info" data-target="#gestionTaxi2" data-toggle="modal"><i class="fa fa-external-link"></i></button>
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                           </tr>
@@ -231,13 +231,13 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                <button class="btn btn-sm btn-info" data-target="#gestionTaxi3" data-toggle="modal"><i class="fa fa-external-link"></i></button>
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                           </tr>
                         </tbody>
                       </table>
-                      <h4 class="text-center bg-mute">Trafic</h4>
+                      <h4 class="text-center bg-mute"><a href="#">Trafic</a></h4>
                     <table class="table table-hover">
                         <thead>
                           <tr>
@@ -257,7 +257,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                <button class="btn btn-sm btn-info" data-target="#gestionTrafic1" data-toggle="modal"><i class="fa fa-external-link"></i></button>
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                           </tr>
@@ -268,7 +268,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                <button class="btn btn-sm btn-info" data-target="#gestionTrafic2" data-toggle="modal"><i class="fa fa-external-link"></i></button>
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                           </tr>
@@ -279,7 +279,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
+                                <button class="btn btn-sm btn-info" data-target="#gestionTrafic3" data-toggle="modal"><i class="fa fa-external-link"></i></button>
                                 <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                             </td>
                           </tr>
@@ -380,6 +380,47 @@
     </div>
   </div>
   <!-- Modal mobile end -->
+      <!-- detail payement cash -->
+  <div class="modal fade" id="modalcash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h4 class="text-center mt-3">Details Payements Cash</h4>
+        <div class="modal-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Numéro</th>
+                <th scope="col">Destination départ</th>
+                <th scope="col">Destination arrivé</th>
+                <th scope="col">Montant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal payement cash end -->
 
       <!-- detail echec-->
   <div class="modal fade" id="modalechec" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -423,7 +464,407 @@
   </div>
   <!-- Modal echec end -->
     
-      
+  <!-- Modal gestion taxi -->
+  <div class="modal fade" id="gestionTaxi1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gestion de Taxi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Immatriculation</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">User</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Matricule</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Début connexion</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Fin connexion</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">	Compte</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">	Compte</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-info">Ajouter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal gestion 2 -->
+  <div class="modal fade" id="gestionTaxi2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gestion de Taxi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Immatriculation</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">User</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Matricule</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Début connexion</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Fin connexion</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">	Compte</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">	Compte</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-info">Ajouter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal gestion 3 -->
+  <div class="modal fade" id="gestionTaxi3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gestion de Taxi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Immatriculation</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">User</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Matricule</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Début connexion</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Fin connexion</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">	Compte</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">	Compte</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-info">Ajouter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal gestion taxi end -->
+
+<!-- modal gestion passagers -->
+<div class="modal fade" id="gestionTrafic1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Gestion de Passagers</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Numéro</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Destination départ</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Destination arrivé</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Matricule</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nombre de destinations</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+          </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+      <button type="button" class="btn btn-info">Ajouter</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Gestion passager 2 -->
+<div class="modal fade" id="gestionTrafic2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Gestion de Passagers</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Numéro</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Destination départ</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Destination arrivé</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Matricule</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nombre de destinations</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+          </div>
+
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+      <button type="button" class="btn btn-info">Ajouter</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- gestion passager 3 -->
+<div class="modal fade" id="gestionTrafic3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Gestion de Passagers</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Numéro</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Destination départ</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Destination arrivé</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Matricule</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Nombre de destinations</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+          </div>
+      </div>
+
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+  <button type="button" class="btn btn-info">Ajouter</button>
+</div>
+</div>
+</div>
+</div>
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/charts/chart.js"></script>
