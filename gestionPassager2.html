@@ -151,7 +151,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <button class="btn btn-sm"><i class="fa fa-ellipsis-v"></i></button>
+                                    <button class="btn btn-sm" data-toggle="modal" data-target="#target1"><i class="fa fa-ellipsis-v"></i></button>
                                     <button class="btn btn-sm"><i class="fa fa-trash"></i></button>
                                     <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit1"><i class="fa fa-external-link"></i></button>
                                     
@@ -162,7 +162,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <button class="btn btn-sm"><i class="fa fa-ellipsis-v"></i></button>
+                                    <button class="btn btn-sm" data-toggle="modal" data-target="#target2"><i class="fa fa-ellipsis-v"></i></button>
                                     <button class="btn btn-sm"><i class="fa fa-trash"></i></button>
                                     <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit1"><i class="fa fa-external-link"></i></button>
                                     
@@ -173,7 +173,7 @@
                                 <td colspan=""></td>
                                 <td colspan=""></td>
                                 <td>
-                                    <button class="btn btn-sm"><i class="fa fa-ellipsis-v"></i></button>
+                                    <button class="btn btn-sm" data-toggle="modal" data-target="#target3"><i class="fa fa-ellipsis-v"></i></button>
                                     <button class="btn btn-sm"><i class="fa fa-trash"></i></button>
                                     <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit1"><i class="fa fa-external-link"></i></button>
                                     
@@ -186,243 +186,170 @@
                     </div>
                   </div>
 
-                  <!-- Modal gestion equipements-->
-<div class="modal fade" id="ajouterEquipement" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Nouvel équipement</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">EMEI</label>
-                        <input type="text" class="form-control" id="recipient-name">
+  <!-- target modal 1-->
+  <div class="modal fade" id="target1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h4 class="text-center mt-3">Details Passager</h4>
+        <div class="row">
+            <div class="offset-4 col-7">
+                <div class="row">
+                    <div class="col-6">
+                        Search: <input type="text">
                     </div>
+                    <div class="col-6">
+                        <span><button class="btn btn-sm bg-info text-light mt-3"><span class="mr-2" style="background: #25648f;"><i class="fa fa-file"></i></span>imprimer la liste</button></span>
+                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">ICC SIM</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                </div>
+                
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Date d'abonnement</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Etat du kit</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Immatriculation</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                </div>
-            </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-        <button type="button" class="btn btn-info">Ajouter</button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Numéro passagers</th>
+                <th scope="col">Caisse</th>
+                <th scope="col">Nombre d'utilisation</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Modal gestion equipement end -->
+  <!-- end modal 1  -->
 
-    <!-- Modal gestion edit 1-->
-    <div class="modal fade" id="edit1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- target modal 2 -->
+  <div class="modal fade" id="target2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nouvel équipement</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-content">
+        <h4 class="text-center mt-3">Details Passager</h4>
+        <div class="row">
+            <div class="offset-4 col-7">
+                <div class="row">
+                    <div class="col-6">
+                        Search: <input type="text">
+                    </div>
+                    <div class="col-6">
+                        <span><button class="btn btn-sm bg-info text-light mt-3"><span class="mr-2" style="background: #25648f;"><i class="fa fa-file"></i></span>imprimer la liste</button></span>
+                     </div>
+                </div>
+                
+            </div>
         </div>
         <div class="modal-body">
-            <form>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">EMEI</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">ICC SIM</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Date d'abonnement</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Etat du kit</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Immatriculation</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-            </form>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Numéro passagers</th>
+                <th scope="col">Caisse</th>
+                <th scope="col">Nombre d'utilisation</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-            <button type="button" class="btn btn-info">Ajouter</button>
-        </div>
-        </div>
+      </div>
     </div>
-    </div>
-    <!-- Modal gestion equipement end -->
+  </div>
+  <!-- end modal 2  -->
 
-    <!-- Modal gestion edit 2-->
-    <div class="modal fade" id="edit2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- target modal 3 -->
+  <div class="modal fade" id="target3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nouvel équipement</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-content">
+        <h4 class="text-center mt-3">Details Passager</h4>
+        <div class="row">
+            <div class="offset-4 col-7">
+                <div class="row">
+                    <div class="col-6">
+                        Search: <input type="text">
+                    </div>
+                    <div class="col-6">
+                        <span><button class="btn btn-sm bg-info text-light mt-3"><span class="mr-2" style="background: #25648f;"><i class="fa fa-file"></i></span>imprimer la liste</button></span>
+                     </div>
+                </div>
+                
+            </div>
         </div>
         <div class="modal-body">
-            <form>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">EMEI</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">ICC SIM</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Date d'abonnement</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Etat du kit</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Immatriculation</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-            </form>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Numéro passagers</th>
+                <th scope="col">Caisse</th>
+                <th scope="col">Nombre d'utilisation</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-            <button type="button" class="btn btn-info">Ajouter</button>
-        </div>
-        </div>
+      </div>
     </div>
-    </div>
-    <!-- Modal gestion equipement 2 end -->
-
-    <!-- Modal gestion edit 3-->
-    <div class="modal fade" id="edit3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nouvel équipement</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">EMEI</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">ICC SIM</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Date d'abonnement</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Etat du kit</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Immatriculation</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-            <button type="button" class="btn btn-info">Ajouter</button>
-        </div>
-        </div>
-    </div>
-    </div>
-    <!-- Modal gestion equipement 3 end -->
-
-
+  </div>
+  <!-- end modal 3  -->
 
                   <!-- Table end -->
                   <footer class="offset-md-1 col-md-11 bg-secondary">
